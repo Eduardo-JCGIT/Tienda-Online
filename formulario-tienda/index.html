@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <section class="form-main">
+      <div class="form-contect">
+        <div class="circle-1"></div>
+        <div class="circle-2"></div>
+        <div class="circle-3"></div>
+        <div class="box">
+          <h3>Bienvenido</h3>
+          <form name="formulario" method="post" action="php/ingreso.php">
+            <div class="input-box">
+              <input
+                type="text"
+                name="email"
+                placeholder="Email"
+                class="input-control"
+              />
+            </div>
+            <div class="input-box">
+              <input
+                type="password"
+                name="password"
+                placeholder="Password"
+                class="input-control"
+              />
+              <div class="input-link">
+                <a href="#" class="gradient-text">Has olvidado la contraseña</a>
+              </div>
+              <button type="submit" name="sesion" class="btn">
+                Iniciar sesion
+              </button>
+            </div>
+          </form>
+          <p>
+            Si no tienes cuenta registrate:
+            <a href="pag/crearcuenta.html" class="gradient-text">
+              Crear cuenta</a
+            >
+          </p>
+          <br>
+          <p>
+            Administrador:
+            <a href="pag/superusuario.html" class="gradient-text">
+              Administrador</a
+            >
+          </p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
