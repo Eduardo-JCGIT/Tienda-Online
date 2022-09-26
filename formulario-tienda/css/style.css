@@ -705,6 +705,13 @@ z-index: -1;
 
 /*Texto de descripcion de producto*/
 
+.position-info{
+    padding-top: 13%;
+}
+.sub-centrado{
+    text-align: center;
+}
+
 
 /*Estilo de foooter*/ 
 
