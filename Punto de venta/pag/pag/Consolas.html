@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="icon" href="../icon/savings.png" />
+  </head>
+  <body>
+    <header>
+      <div class="header-titulo">
+        <h1>
+          Shooping
+          <h1 class="color-letra-decoracion">Game</h1>
+        </h1>
+      </div>
+      <nav>
+        <a href="paginatienda.html">Videojuegos</a>
+        <a href="#">Accesorios</a>
+        <a href="#">Complementos</a>
+        <a href="../php/carrito.php">Carrito</a>
+        <a href="../index.html">Cerrar Sesion</a>
+        <div class="animation start-home"></div>
+      </nav>
+      <br />
+      <!--Carrusel-->
+      <div class="slider">
+        <ul>
+          <li>
+            <div class="contenedor">
+              <img
+                src="../img/carrusel consolas/xbox series anuncio.jpg"/>
+            </div>
+          </li>
+          <li>
+            <img src="../img/carrusel consolas/ps5 anuncio.jpg" />
+          </li>
+          <li>
+            <div class="contenedor2">
+              <img src="../img/carrusel consolas/nintendo-switch.jpg" />
+            </div>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+ 
+        <br />
+        <h1 id="sub-centrado">
+          Gran variedad de
+          <div class="color-letra-decoracion">Consolas</div>
+        </h1>
+        <br />
+        <div class="container">
+        <form id="formulario" name="formulario" method="post" action="../php/carrito.php">
+          <div class="card">
+            <img src="../img/producto fisico/play 5.jpg" alt="" />
+            <input name="nombreProducto" type="hidden" value="PlayStation 5"/>                           
+            <input name="precio" type="hidden" value="13500"/>
+            <h2>PlayStation 5</h2>
+            <p>Memoria GDDR6 16 GB con ancho de banda de 448 GB/s./p>
+            <h4>MXN$13500.00</h4>
+            <button class="estilo-boton" name="addCarrito" type="submit" value="addCarrito">Agregar a carrito</button>
+          </div>
+        </form>
+
+          <!--<form id="formulario" name="formulario" method="post" action="cart.php">
+                
+                <button type="button" class="btn btn-sm btn-outline-secondary">Detalles</button>
+                <button type="submit" class="btn btn-sm btn-outline-secondary">Añadir al carrito</button>
+                  <input name="ref" type="hidden" id="ref" value="mu001" />                           
+                  <input name="precio" type="hidden" id="precio" value="200" />
+                  <input name="titulo" type="hidden" id="titulo" value="Mueble madera moderno" />
+                  <input name="cantidad" type="hidden" id="cantidad" value="2" class="pl-2" />
+
+              </form>
+            -->
+            <form id="formulario" name="formulario" method="post" action="../php/carrito.php">
+          <div class="card">
+            <img src="../img/producto fisico/Xbox series x.jpg" alt="" />
+            <input name="nombreProducto" type="hidden" id="consola" value="Xbox Series X"/>                           
+            <input name="precio" type="hidden" id="precio" value="12500"/>
+            <h2>Xbox Series X</h2>
+            <p>MEMORIA Y ALMACENAMIENTO. Memoria. GDDR6 de 16 GB con bus de 320 bits de ancho.</p>
+            <h4>MXN$12500.00</h4>
+            <button class="estilo-boton" name="addCarrito" type="submit" value="addCarrito">Agregar a carrito</button>
+          </div>
+            </form>
+
+            <form id="formulario" name="formulario" method="post" action="../php/carrito.php">
+          <div class="card">
+            <img src="../img/producto fisico/nintendo switch.jpg" alt="" />
+            <input name="nombreProducto" type="hidden" id="consola" value="Nintendo Switch" />                           
+            <input name="precio" type="hidden" id="precio" value="7900" />
+            <h2>Nintendo Switch</h2>
+            <p>	64 GB ampliables con tarjetas microSD</p>
+            <p>"Con juego Incluido"</p>
+            <h4>MXN$7900.00</h4>
+            <button class="estilo-boton" name="addCarrito" type="submit" value="addCarrito">Agregar a carrito</button>
+          </div>
+            </form>
+          <br />
+          <br />
+          <form id="formulario" name="formulario" method="post" action="../php/carrito.php">
+          <div class="card">
+            <img src="../img/producto fisico/Xbox series s.jpg" alt="" />
+            <input name="nombreProducto" type="hidden" id="consola" value="Xbox Series S" />                           
+            <input name="precio" type="hidden" id="precio" value="6999" />
+            <h2>Xbox series S</h2>
+            <p>X10 GB de memoria GDDR6 unificada a 14 GHz (224 GB/s de ancho de banda).</p>
+            <h4>MXN$6999.00</h4>
+            <button class="estilo-boton" name="addCarrito" type="submit" value="addCarrito">Agregar a carrito</button>
+          </div>
+          </form>
+          <form id="formulario" name="formulario" method="post" action="../php/carrito.php">
+          <div class="card">
+            <img src="../img/producto fisico/play 4.jpg" alt="" />
+            <input name="nombreProducto" type="hidden" id="consola" value="PlayStation 4" />                           
+            <input name="precio" type="hidden" id="precio" value="7200" />
+            <h2>PlayStation 4</h2>
+            <p>Procesador principal. Procesador especial de chip único. CPU: x86-64 AMD "Jaguar", 8 núcleos.</p>
+            <h4>MXN$7200.00</h4>
+            <button class="estilo-boton" name="addCarrito" type="submit" value="addCarrito">Agregar a carrito</button>
+          </div>
+        </form> 
+        <form id="formulario" name="formulario" method="post" action="../php/carrito.php">
+          <div class="card">
+            <img src="../img/producto fisico/nintendo switch pokemon sword.jfif" alt="" />
+            <input name="nombreProducto" type="hidden" id="consola" value="Nintendo Switch + Pokemon Swor" />                           
+            <input name="precio" type="hidden" id="precio" value="8050" />
+            <h2>Nintendo Switch + Pokemon Sword</h2>
+            <p>incluye juego "Pokemon Sword"</p>
+            <p>64 GB ampliables con tarjetas microSD</p>
+            <h4>MXN$8050.00</h4>
+            <button class="estilo-boton" name="addCarrito" type="submit" value="addCarrito">Agregar a carrito</button>
+          </div>
+        </form>
+    </main>
+  </body>
+</html>
