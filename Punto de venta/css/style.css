@@ -171,137 +171,67 @@ nav a{
 }
 
 /*Animacion de menu de naegacion*/
-nav .animation{
-	position: absolute;
-	height: 100%;
-	/* height: 5px; */
-	top: 0;
-	/* bottom: 0; */
-	z-index: 0;
-	border-radius: 16px;
-	transition: all .5s ease 0s;
-    
-}
+
 nav a:nth-child(1){
 	width: 130px;
-    
+    border-radius: 15px;
 }
-nav .start-home, a:nth-child(1):hover~.animation{
-	width: 130px;
-	left: 1px;
-    
+
+nav a:nth-child(1):hover{
+    color: var(--menu2);
+    transition: all .5s ease 0s;
+    border-radius: 15px;
+    box-shadow: var(--menu2);
 }
+
 nav a:nth-child(2){
-	width: 130px;
+	width: 140px;
+    border-radius: 15px;
 }
 
-nav a:nth-child(1):hover~.animation{
-	width: 130px;
-	left: 1px;
-    box-shadow: #21E1E1 1px 1px 15px 1px;
-    background: #21E1E1;
+nav a:nth-child(2):hover{
+    color: var(--menu2);
+    transition: all .5s ease 0s;
+    border-radius: 15px;
 }
 
-nav a:nth-child(2):hover~.animation{
-	width: 130px;
-	left: 130px;
-    box-shadow: #21E1E1 1px 1px 15px 1px;
-    background: #21E1E1;
-}
 nav a:nth-child(3){
-	width: 120px;
+	width: 140px;
+    border-radius: 15px;
 }
-nav a:nth-child(3):hover~.animation{
-	width: 120px;
-	left: 260px;
-    box-shadow: #21E1E1 1px 1px 15px 1px;
-    background: #21E1E1;
+
+nav a:nth-child(3):hover{
+    color: var(--menu2);
+    transition: all .5s ease 0s;
+    border-radius: 15px;
 }
+
 nav a:nth-child(4){
-	width: 140px;
+	width: 120px;
+    border-radius: 15px;
 }
-nav a:nth-child(4):hover~.animation{
-	width: 140px;
-	left: 380px;
-    box-shadow: #21E1E1 1px 1px 15px 1px;
-    background: #21E1E1;
+
+nav a:nth-child(4):hover{
+    color: var(--menu2);
+    transition: all .5s ease 0s;
+    border-radius: 15px;
 }
+
 nav a:nth-child(5){
 	width: 140px;
+    border-radius: 15px;
 }
-nav a:nth-child(5):hover~.animation{
-	width: 140px;
-	left: 521px;
-    box-shadow: #21E1E1 1px 1px 15px 1px;
-    background: #21E1E1;
+
+nav a:nth-child(5):hover{
+    color: var(--menu2);
+    transition: all .5s ease 0s;
+    border-radius: 15px;
 }
 
 /*Segunda animacion del primer nav*/
 
-nav .animation2{
-	position: absolute;
-	height: 100%;
-	/* height: 5px; */
-	top: 0;
-	/* bottom: 0; */
-	z-index: 0;
-	border-radius: 16px;
-	transition: all .5s ease 0s;
-    
-}
-nav a:nth-child(1){
-	width: 130px;
-    
-}
-nav .start-home, a:nth-child(1):hover~.animation2{
-	width: 130px;
-	left: 1px;
-    
-}
-nav a:nth-child(2){
-	width: 130px;
-}
+/*Quedo cancelado por el momento*/
 
-nav a:nth-child(1):hover~.animation2{
-	width: 130px;
-	left: 825px;
-    box-shadow: #21E1E1 1px 1px 15px 1px;
-    background: #21E1E1;
-}
-
-nav a:nth-child(2):hover~.animation2{
-	width: 130px;
-	left: 960px;
-    box-shadow: #21E1E1 1px 1px 15px 1px;
-    background: #21E1E1;
-}
-nav a:nth-child(3){
-	width: 120px;
-}
-nav a:nth-child(3):hover~.animation2{
-	width: 120px;
-	left: 1090px;
-    box-shadow: #21E1E1 1px 1px 15px 1px;
-    background: #21E1E1;
-}
-nav a:nth-child(4){
-	width: 140px;
-}
-nav a:nth-child(4):hover~.animation2{
-	width: 140px;
-	left: 1205px;
-    box-shadow: #21E1E1 1px 1px 15px 1px;
-    background: #21E1E1;
-}
-nav a:nth-child(5){
-	width: 140px;
-}
-nav a:nth-child(5):hover~.animation2{
-	width: 140px;
-	left: 1347px;
-    box-shadow: #21E1E1 1px 1px 15px 1px;
-    background: #21E1E1;
-}
 
 /*Menu de navegacion 2*/
 
@@ -464,22 +394,6 @@ z-index: -1;
     text-align: center;
 }
 
-/*Estilo de texto (Titulo,subtitulos)*/
-
-.texto-encima{
-    position: absolute;
-    top: 5%;
-    left: 2%;
-    font-size: 2em;
-}
-
-.texto-encima2{
-    position: absolute;
-    top: 87%;
-    left: 5%;
-    text-align: center;
-    font-size: 1.5em;
-}
 
 /*Estilo de texto (Titulo,subtitulos) header*/
  /*Tipografia de detalles del producto */
@@ -508,21 +422,6 @@ z-index: -1;
     text-align: center;
 }
 
-.texto-encima3{
-    position: absolute;
-    top: 5%;
-    left: 2%;
-    font-size: 2em;
-}
-
-.texto-encima4{
-    position: absolute;
-    top: 63%;
-    left: 53%;
-    right: 3%;
-    text-align: center;
-    font-size: 1.2em;
-}
 
 .logo-encima{
     position: absolute;
@@ -533,6 +432,11 @@ z-index: -1;
 
 /*Estilo carrusel de tienda*/
 
+.block-header-img{
+    display: none;
+}
+
+
 .slider{
     width: 100%;
     height: 100%;
@@ -540,7 +444,7 @@ z-index: -1;
   }
   .slider ul{
       display: flex;
-      animation: cambio 20s infinite alternate linear;
+      animation: cambio 15s infinite alternate linear;
       width: 300%;
   }
   .slider li{
@@ -548,8 +452,7 @@ z-index: -1;
       list-style: none;
   }
   .slider img{
-      width: 1519px;
-      height: 900px;
+      width: 100%;
   }
   @keyframes cambio{
       0%{margin-left: 0;}
@@ -566,9 +469,57 @@ z-index: -1;
   }
   @media only screen and (min-width:320px) and (max-width:768px){
   .slider, .slider ul, .slider img{
-      height: 100vh;
+      height: auto;
   }
   }
+
+/*Estilo de texto (Titulo,subtitulos)*/
+
+.texto-encima{
+    position: absolute;
+    top: 25%;
+    left: 5%;
+    font-size: 1.5em;
+    color: var(--black);
+}
+
+.texto-encima2{
+    position: absolute;
+    top: 20%;
+    padding: 7% 55% 0% 5%;
+    text-align: left;
+    font-size: 1.5em;
+    color: var(--black);
+}
+
+.texto-encima3{
+    position: absolute;
+    top: 75%;
+    left: 2%;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.texto-encima4{
+    position: absolute;
+    top: 50%;
+    left: 65%;
+    right: 5%;
+    text-align: left;
+    font-size: 1.5em;
+    color: var(--text-white);
+}
+
+.texto-encima5{
+    position: absolute;
+    text-align: left;
+    top: 20%;
+    left: 65%;
+    right: 5;
+    font-size: 1.5em;
+    color: var(--text-white);
+}
+
 
   /*Estilos de punto de venta cartas*/
   
@@ -1091,11 +1042,49 @@ footer{
         display: block;
     }
 
+    .nav-mobile{
+        
+    }
+
+    /*Header responsiva*/
+     
+
+    .texto-encima{
+        position: absolute;
+        top: 25%;
+        left: 5%;
+        font-size: 0.9em;
+        color: var(--black);
+    }
+    
+    .texto-encima2{
+        font-size: 0.9em;
+    }
+    
+    .texto-encima3{
+        right: 15%;
+        left: 2%;
+        font-size: 0.5em;
+        text-align: center;
+    }
+    
+    .texto-encima4{
+        top: 15%;
+        left: 60%;
+        right: 15%;
+        font-size: 0.7em;
+    }
+    
+    
+    
+    /*Nav mobile*/
+
 
 
     .nav-label-mobile{
         display: block;
         cursor: pointer;
+
     }
 
     .nav-menu-mobile{
@@ -1255,7 +1244,7 @@ footer{
 }
 
 
-@media screen and (max-width: 360px){
+@media screen and (max-width: 350px){
 
 
     /*header*/
@@ -1331,6 +1320,80 @@ footer{
         margin: auto;
         margin-bottom: 5px;
      }
+
+     /*Header pagina principal*/
+
+     .block-header-img-principal{
+        display: none;
+     }
+
+     .block-header-img{
+        display: block;
+     }
+     
+    .slider{
+    width: 100%;
+    overflow: hidden;
+    }
+
+  .slider ul{
+      display: flex;
+      animation: cambio 15s infinite alternate linear;
+      width: 300%;
+  }
+  .slider li{
+      width: 100%;
+      list-style: none;
+  }
+  .slider img{
+      width: 100%;
+      height: 100%;
+
+  }
+  @keyframes cambio{
+      0%{margin-left: 0;}
+      35%{margin-left: 0;}
+      
+      45%{margin-left: -100%;}
+      75%{margin-left: -100%;}
+      
+      85%{margin-left: -200%;}
+      100%{margin-left: -200%;}
+      
+     /* 75%{margin-left: -300%;}
+      100%{margin-left: -300%;}*/
+    }
+
+    .texto-encima{
+        top: 50%;
+        left: 20%;
+        font-size: 1em;
+    }
+    
+    .texto-encima2{
+        top: 55%;
+        padding: 7% 15% 0% 20%;
+        text-align: justify;
+        font-size: 0.9em;
+    }
+    
+    .texto-encima3{
+        position: absolute;
+        top: 70%;
+        margin: auto;
+        font-size: 0.7em;
+        text-align: center;
+    }
+    
+    .texto-encima4{
+        top: 40%;
+        left: 10%;
+        right: 10%;
+        font-size: 1em;
+        text-align: justify;
+    }
+    
+
 
 
     /*Genero*/
