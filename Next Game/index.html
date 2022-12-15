@@ -10,8 +10,9 @@
   <body class="back-img-fond">
     <header>
       <div class="nav-nx">
-        <img src="../img/Logo/Logo 2.png" alt="" class="icon-logo-nx" />
+        <img src="img/Logo/Logo 2.png" alt="" class="icon-logo-nx" />
         <nav>
+          <div class="back-menu"></div>
           <ul>
             <li><a href="pag/Juegos.html">Juegos</a></li>
             <li><a href="#">Consolas</a></li>
@@ -21,17 +22,34 @@
           </ul>
         </nav>
       </div>
+      <div class="back-menu-mobile-color">
+        <img src="img/Logo/Logo 2.png" alt="">
+      </div>
+
+      <div class="bar-menu">
+        <span class="line1-bar-menu"></span>
+        <span class="line2-bar-menu"></span>
+        <span class="line3-bar-menu"></span>
+      </div>
+      
       <div class="img-welcome">
         <ul>
           <li>
             <div class="cont-he-nx">
-              <img src="../img/Carrusel Juegos/Overwatch 2.jpg" alt="" />
+              <div class="block-overwatch-pc">
+                <img src="img/Carrusel Juegos/Overwatch 2.jpg" alt="" />
+              </div>
+              <div class="block-overwatch-mobile">
+                <img src="img/Carrusel Juegos/Overwatch 2-mobile.jpg" alt="" />
+              </div>
               <div class="header-text-ab">
                 <div class="logo-overwatch">
-                  <img
-                    src="../img/Pagina principal/Overwatch_2_full_logo.svg.png"
-                    alt=""
-                  />
+                  <div class="block-overwatch-pc">
+                    <img
+                      src="img/Pagina principal/Overwatch_2_full_logo.svg.png"
+                      alt=""
+                    />
+                  </div>
                 </div>
                 <p>
                   Más héroes extraordinarios se unirán al plantel actual. Da
@@ -41,10 +59,31 @@
               </div>
             </div>
           </li>
-          <li><img src="../img/Carrusel Juegos/Fifa 23 DLC.jpg" alt="" /></li>
+          <li>
+            <div class="block-fifa23-pc">
+              <img src="img/Carrusel Juegos/Fifa 23 DLC.jpg" alt="" />
+            </div>
+            <div class="block-fifa23-mobile">
+              <img src="img/Carrusel Juegos/Fifa 23 DLC-mobile.jpg" alt="" />
+            </div>
+          </li>
           <li>
             <div class="cont-he-nx">
-              <img src="../img/Carrusel Juegos/HaloInftem2.jpg" alt="" />
+              <div class="block-haloinf-pc">
+                <img src="img/Carrusel Juegos/HaloInftem2.jpg" alt="" />
+              </div>
+              <div class="block-haloinf-mobile">
+                <img src="img/Carrusel Juegos/HaloInftem2-mobile.jpg" alt="">
+              </div>
+              <div class="header-text-halo">
+                <h2>Nuevo modo "EL rey de la colina"</h2>
+                <br />
+                <p>
+                  La forma en que el "rey" puede ser eliminado de la colina
+                  depende, en gran medida, de las normas establecidas por los
+                  jugadores antes de que empiece el juego.
+                </p>
+              </div>
             </div>
           </li>
         </ul>
@@ -78,8 +117,14 @@
           </div>
         </div>
       </div>
+
       <div class="card2-bk">
-        <img src="../img/Pagina principal/Genshin 3.jpg" alt="" />
+        <div class="img-genshin-pc">
+          <img src="../img/Pagina principal/Genshin 3.jpg" alt="" />
+        </div>
+        <div class="img-genshin-mobile">
+          <img src="img/Pagina principal/Genshin 3-mobile.jpg" alt="" />
+        </div>
         <h2>FARUZÁN: LEGADO DE LA SABIDURÍA</h2>
         <p>
           Obtén gratis 700 protogemas y 20000 moras al adquirir cualquier
@@ -142,7 +187,12 @@
         </div>
       </div>
       <div class="card2-bk">
-        <img src="../img/Pagina principal/fortnite 2.jpg" alt="" />
+        <div class="img-fortnite-pc">
+          <img src="../img/Pagina principal/fortnite 2.jpg" alt="" />
+        </div>
+        <div class="img-fortnite-mobile">
+          <img src="img/Pagina principal/fortnite 2-mobile.jpg" alt="" />
+        </div>
         <div class="img-bk-plasm">
           <img
             src="../img/Pagina principal/chapter4-logo-no-fortnite-es-es-3095x932-91861bb54512.png"
@@ -157,7 +207,12 @@
         </div>
       </div>
       <div class="card2-bk">
-        <img src="../img/Pagina principal/MWII BK.jpg" alt="" />
+        <div class="img-mw-pc">
+          <img src="../img/Pagina principal/MWII BK.jpg" alt="" />
+        </div>
+        <div class="img-mw-mobile">
+          <img src="img/Pagina principal/MWII BK-Mobile.jpg" alt="" />
+        </div>
         <div class="text-bk-ft2">
           <h3>TE DAMOS LA BIENVENIDA A LA NUEVA ERA DE CALL OF DUTY</h3>
           <br />
@@ -225,5 +280,6 @@
         </p>
       </div>
     </footer>
+    <script src="js/menu.js"></script>
   </body>
 </html>
