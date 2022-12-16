@@ -745,6 +745,32 @@ a{
     width: 100%;
 }
 
+/*Mantenimiento*/
+
+.manteniemnto-center-text{
+    text-align: center;
+    margin-top: 5%;
+}
+
+.column-mante-2{
+    display: flex;
+    columns: 2;
+}
+
+.font-size-mante h2{
+    font-size: 2.7em;
+}
+.column-mante-2 h3{
+    margin: 0 10%;
+    font-size: 2.5em;
+    text-align: center;
+    transform: translate(0, 25%);
+}
+
+.column-mante-2 img{
+    width: 500px;
+}
+
 /*Descativacion de diseños y objetos HTML*/
 
 .block-overwatch-mobile{
