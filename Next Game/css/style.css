@@ -45,8 +45,14 @@ body{
     /*background: rgba(0, 0, 0, 0.2);*/
     background: var(--dark-gray);
     z-index: 2;
-    
 }
+
+/*
+.top-pag-position{
+    padding-top:5%;
+}
+
+*/
 
 .icon-logo-nx{
     margin: 0.5em;
@@ -64,6 +70,10 @@ nav li{
 nav li a{
     text-decoration: none;
     color: var(--white);
+}
+
+nav ul{
+    display: flex;
 }
 
 
@@ -116,9 +126,17 @@ nav li a:hover{
     top: 20%;
     right: 60%;
     margin: 0 1%;
-    font-size: 1.5vw;
+    font-size: 1.4vw;
     transform: translate(5%);
     color: var(--text-black);
+}
+
+.header-text-halo{
+    position: absolute;
+    top: 25%;
+    left: 55%;
+    margin: 0 5%;
+    font-size: 1.3vw;
 }
 
 @keyframes change{
@@ -171,17 +189,24 @@ h1{
     color: var(--text-black);
 }
 
-h2{
-    font-size: 2.1em;
+.cards h2{
+    font-size: 2vw;
 }
 
+.cards p{
+    font-size: 1.5vw;
+}
+
+.cards h3{
+    font-size: 1.3vw;
+}
 
 .card1 img{
-    width: 400px;
+    width: 25vw;
 }
 
 .card2 img{
-    width: 400px;
+    width: 25vw;
 }
 
 
@@ -213,23 +238,6 @@ h2{
     width: 50%;
 }
 
-.card2-bk h2{
-    position: absolute;
-    top: 30%;
-    left: 57%;
-    font-size: 2.2vw;
-}
-
-.card2-bk p{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin: 0 5%;
-    font-size: 1.6vw;
-    transform: translate(5%);
-}
-
-
 .card2-bk .text-bk-ft{
     position: absolute;
     top: 65%;
@@ -238,6 +246,25 @@ h2{
     font-size: 1.9vw;
     transform: translate(5%);
 }
+
+.card2-bk h2{
+    position: absolute;
+    top: 30%;
+    left: 57%;
+    font-size: 2.2vw;
+    box-sizing: border-box;
+}
+
+.card2-bk p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: 0 5%;
+    font-size: 1.5vw;
+    transform: translate(5%);
+    box-sizing: border-box;
+}
+
 
 .card2-bk .text-bk-ft2{
     position: absolute;
@@ -482,11 +509,11 @@ a{
 
 .container{
     width: 100%;
-    max-width: 1200px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin: auto;margin-bottom: 20px;
+    margin: auto;
+    margin-bottom: 20px;
 }
 
 /*Cartas de tienda*/
@@ -525,14 +552,17 @@ a{
 .card h2{
     font-size: 1.5em;
 }
+
 .estilo-boton{
+    font-size: 1em;
+    padding: 2%;
     margin-top: 5px;
     background-color: var(--blue-rey);
-    padding: 10px;
     border: none;
     color: var(--white);
     font-family: 'Poppins', sans-serif;
 }
+
 
 .estilo-boton:hover{
     background-color: var(--hover-button);
@@ -544,18 +574,867 @@ a{
 
 .img-bk-detail-product img{ 
     width: 100%;
-    position: absolute;
+    position: absolute
 }
 
 .position-detil-text{
-    position: absolute;
+    position: relative;
     font-size: 1.5vw;
-    top: 23vh;
+    top: 3.5em;
     transform: translate(-100%);
     margin: 0 35%;
 }
 
 .text-detail-size{
     font-size: 0.8em;
+}
+
+.position-detil-text button{
+    font-size: 2vh;
+}
+
+/*Barra de detalles de producto*/
+
+.top-bac-position{
+    margin-top: 12%;
+    font-size: 2.2vh;
+}
+
+
+.back-gen-product{
+    background-color: var(--dark-gray);
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding: auto;
+    padding: 20px 20px 20px 20px;
+    display: flex;
+    gap: 40px;
+}
+
+.text-detail-product-25{
+    width: 50%;
+}
+
+.text-detail-product-26{
+    width: 50%;
+    display: flex;
+}
+
+.text-detail-product-26 img{
+    width: 45px;
+    margin-right: 3%;
+}
+
+/*Requisitos del sistemas*/
+
+.container2{
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.container2 p{
+    font-size: 1.2vw;
+}
+
+.container2 h2{
+    font-size: 1.8vw;
+}
+
+.flex-requ-1{
+    display: flex;
+}
+
+.flex-requ-text-1{
+    width: 50%;
+}
+
+.flex-requ-text-2{
+    width: 50%;
+}
+
+/*Imagenes de detalles del producto*/
+
+.slider-frame-detail-product{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.slider-frame-detail-product ul{
+    display: flex;
+    padding: 0%;
+    width: 500%;
+    animation: slide 20s infinite alternate ease-in-out;
+}
+
+.slider-frame-detail-product li{
+    list-style: none;
+    width: 100%;
+}
+
+.slider-frame-detail-product img{
+    width: 100%;
+}
+
+@keyframes slide{
+    0% {margin-left: 0%;}
+    20% {margin-left: 0%;}
+
+    25% {margin-left: -100%;}
+    35% {margin-left: -100%;}
+
+    40% {margin-left: -200%;}
+    55% {margin-left: -200%;}
+
+    60% {margin-left: -300%;}
+    80% {margin-left: -300%;}
+
+    85% {margin-left: -400%;}
+    100% {margin-left: -400%;}
+    
+}
+
+/*Flex imagenes*/
+
+.flex-imf-detail-1{
+    display: flex;
+    margin-top: 5%;
+}
+
+.img-detalle-2{
+    width: 50%;
+}
+
+.video-detalles{
+    width: 50%;
+}
+
+.video-detalles video{
+    width: 100%;
+    height: auto;
+}
+
+.img-detalle-3{
+    width: 100%;
+}
+
+.img-detalle-3 img{
+    width: 100%;
+}
+
+.flex-img-10{
+    width: 100%;
+    display: flex;
+}
+
+.flex-requ-img-11{
+    width: 50%;
+}
+
+.flex-requ-img-12{
+    width: 50%;
+}
+
+.flex-requ-img-11 img{
+    width: 100%;
+}
+
+.flex-requ-img-12 img{
+    width: 100%;
+}
+
+/*Descativacion de diseños y objetos HTML*/
+
+.block-overwatch-mobile{
+    display: none;
+}
+
+.block-fifa23-mobile{
+    display: none;
+}
+
+.block-haloinf-mobile{
+    display: none;
+}
+
+.img-bk-detail-product-mobile-800{
+    display: none;
+}
+
+.img-genshin-mobile{
+    display: none;
+}
+
+.img-fortnite-mobile{
+    display: none;
+}
+
+.img-mw-mobile{
+    display: none;
+}
+
+.back-menu-mobile-color{
+    display: none;
+}
+
+.img-bk-detail-product-mobile-600{
+    display: none;
+}
+/*Responsividad*/
+
+@media screen and (max-width: 850px){
+    
+    /*Nav mobile*/
+
+    .nav-nx{
+        position: fixed;
+        background: var(--dark-gray);
+        top: 0;
+        right: -250px;
+        width: 240px;
+        height: 100vh;
+        padding: 40px;
+        z-index: 1;
+        transition: all 300ms;
+    }
+
+    nav ul{
+        margin-top: 50px;
+      flex-direction: column;  
+    }
+
+    nav ul li{
+        margin-top: 30px;
+        transform: translate(-100%);
+    }
+
+    .nav-nx ul li a{
+        color: var(--white);
+    }
+
+    .back-menu{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: rgba(0,0,0,.4);
+        display: none;
+        z-index: -1;
+    }
+
+    .back-menu-mobile-color{
+     display: block;
+     background-color: var(--dark-gray);   
+     width: 100%;
+     height: auto;
+     padding: 10px 10px;
+    
+     z-index: 12;
+    }
+
+    .back-menu-mobile-color img{
+        width: 120px;
+    }
+
+
+    /*Menu animacion*/
+
+    .bar-menu{
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        left: 85%;
+        transform: translate(10%, -150%) scale(1.5);
+        cursor: pointer;
+        
+    }
+
+    .bar-menu span{
+        display: block;
+        width: 100%;
+        height: 2px;
+        background: var(--blue-nx); 
+        margin-top: 6px;
+        transform-origin: 0px 100%;
+        transition: all 600ms;    
+    }
+
+    .Activeline1-bar-menu{
+        /*transform: rotate(45deg) translate(-2px, 1px);*/
+        margin-left: -50px;
+        opacity: 0;
+    }
+
+    
+    .Activeline2-bar-menu{
+        opacity: 0;
+        margin-left: -50px;
+    }
+
+
+    .Activeline3-bar-menu{
+       /* transform: rotate(-45deg) translate(-4px, 2px); */
+       margin-left: -50px;
+       opacity: 0;
+    }
+
+    .Activeline4-bar-menu{
+        /*transform: rotate(45deg) translate(-2px, 1px);*/
+        margin-left: 0px;
+    }
+
+    
+    .Activeline5-bar-menu{
+        margin-left: 0px;
+    }
+
+
+    .Activeline6-bar-menu{
+       /* transform: rotate(-45deg) translate(-4px, 2px); */
+       margin-left: 0px;
+    }
+
+
+
+    /*Cards Tienda Juegos y mas*/
+
+    .card h4{
+        font-weight: 600;
+    }
+    
+    .card p{
+        padding: 0 1rem;
+        font-size: 16px;
+        font-weight: 300;
+    }
+    
+    .card h2{
+        font-size: 1.5em;
+    }
+
+
+
+
+
+
+    /*Text detalles de producto*/
+    .position-detil-text{
+        position: relative;
+        top: 3em;
+        transform: translate(-25%);
+        margin: 0 20%;
+    }
+
+    .top-pag-position p{
+        font-size: 1vw;
+    }
+
+    .top-pag-position h2{
+        font-size: 5vh;
+    }
+
+    .top-pag-position h3{
+        font-size: 9px;
+    }
+
+    .img-bk-detail-product{
+        display: none;
+    }
+
+    .top-pag-position .estilo-boton{
+        font-size: 1em;
+        margin-top: 5px;
+    }
+
+
+    /*
+
+    No se toca, pendiente
+    .top-pag-position{
+        margin-bottom: 50%;
+    }
+
+    */
+
+    /*Genero1 de detalle producto*/
+
+
+    /*Imagenes responsivas de detalles producto*/
+
+
+    .flex-imf-detail-1{
+        margin-top: 0%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .img-detalle-2{
+        width: 100%;
+    }
+    
+    .video-detalles{
+        width: 100%;
+    }
+    
+    .video-detalles video{
+        width: 100%;
+        height: auto;
+    }
+    
+    .img-detalle-3{
+        width: 100%;
+    }
+    
+    .img-detalle-3 img{
+        width: 100%;
+    }
+    
+    .flex-img-10{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .flex-requ-img-11{
+        width: 100%;
+    }
+    
+    .flex-requ-img-12{
+        width: 100%;
+    }
+
+
+
+    /*Dettalles producto responsive*/
+
+    .position-detil-text h2{
+        font-size: 3vw;
+    }
+
+    .text-detail-size p{
+        font-size: 1.5vw;
+    }
+
+    .position-detil-text h3{
+        font-size: 1.5vw;
+    }
+
+    .img-bk-detail-product{
+        display: none;
+    }
+
+    .img-bk-detail-product-mobile-800{
+        display: block;
+        width: 100%;
+        position: absolute;
+    }
+
+    .img-bk-detail-product-mobile-800 img{
+        width: 100%;
+    }
+
+
+
+    /*footer*/
+
+    footer{
+        display:none;
+    }
+
+    
+    h1{
+        font-size: 17px;
+    }
+
+    .container2 p{
+        font-size: 10px;
+    }
+    
+
+    .container2 h2{
+        font-size: 13px;
+    }
+
+    .back-gen-product p{
+        font-size: 9px;
+    }
+
+    .back-gen-product img{
+        width: 30px;
+    }
+    
+}
+
+@media screen and (max-width: 600px){
+
+
+    /*Index header img*/
+
+    .block-overwatch-mobile{
+        display: block;
+        width: 100%;
+    }
+    
+    .block-fifa23-mobile{
+        display: block;
+    }
+    
+    .block-haloinf-mobile{
+        display: block;
+    }
+
+    .block-overwatch-pc{
+        display: none;
+    }
+
+    .block-fifa23-pc{
+        display: none;
+    }
+
+    .block-haloinf-pc{
+        display: none;
+    }
+
+    /*Text*/
+
+    .header-text-ab{
+        top: 63%;
+        right: 0%;
+        margin: 0 5%;
+        transform: translate(0%);
+    }
+
+    .header-text-ab p{
+        font-size: 3.1vw;
+    }
+    
+    .header-text-halo{
+        position: absolute;
+        top: 60%;
+        left: 0%;
+        margin: 0 5%;
+    }
+
+    .header-text-halo h2{
+        font-size: 3.9vw;
+    }
+
+    .header-text-halo p{
+        font-size: 3.1vw;
+    }
+
+    h1{
+        font-size: 4vw;
+    }
+    
+
+
+    /*Index welcome cards*/
+    .cards{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .card1{
+        width: auto;
+        text-align: left;
+        display: flex;
+    }
+    
+    .card2{
+        width: auto;
+        text-align: left;
+        display: flex;
+    }
+
+    .card1 img{
+        width: 50vw;
+        height: auto;
+    }
+    
+    .card2 img{
+        width: 50vw;
+        height: auto;
+    }
+    
+    .cards p{
+        font-size: 2.5vw;
+    }
+
+    .cards h2{
+        font-size: 4vw;
+    }
+
+    .cards h3{
+        font-size: 3vw;
+    }
+
+    /*Cards long index*/
+
+    /*Genshin Impact*/
+    .img-genshin-pc{
+        display: none;
+    }
+
+    .img-genshin-mobile{
+        display: block;
+        width: 99%;
+    }
+
+
+    .card2-bk h2{
+        position: absolute;
+        font-size: 5vw;
+        left: 0%;
+        transform: translate(5%);
+        top: 60%;
+        
+    }
+
+    .card2-bk p{
+        position: absolute;
+        font-size: 4vw;
+        left: 0%;
+        top: 70%;
+        transform: translate(0%);
+    }
+
+    /*Fortnite*/
+
+    .img-fortnite-pc{
+        display: none;
+    }
+
+    .img-fortnite-mobile{
+        display: block;
+        width: 99%;
+    }
+
+    .card2-bk .img-bk-plasm{
+        top: 20%;
+        left: 45%;
+        width: 55%;
+    }
+    
+    .card2-bk .text-bk-ft{
+        top: 75%;
+        left: 0%;
+        margin: 0 5%;
+        transform: translate(0%);
+        font-size: 0;
+    }
+
+    .text-bk-ft h3{
+        font-size: 4vw;
+    }
+
+    /*MW*/
+
+    .img-mw-pc{
+        display: none;
+    }
+
+    .img-mw-mobile{
+        display: block;
+        width: 99%;
+    }
+
+    .card2-bk .text-bk-ft2{
+        top: 60%;
+        left: 0%;
+        margin: 0 5%;
+        transform: translate(0%);
+    }
+
+    .text-bk-ft2 h3{
+        font-size: 4vw;
+    }
+    
+    .card2-bk .text-bk-ft3 p{
+        top: 90%;
+        left: 0%;
+        margin: 0 5%;
+        font-size: 3vw;
+        transform: translate(0%);
+    }
+    
+
+    /*Segunda pagina*/
+
+    /*Estilos de cartas de tienda*/
+
+    .estilo-boton{
+        font-size: 15px;
+        margin-top: 5px;
+        background-color: var(--blue-rey);
+        padding: 7px;
+        border: none;
+        color: var(--white);
+        font-family: 'Poppins', sans-serif;
+    }
+
+    
+    /*Tercera pagina*/
+
+    /*Detalles producto*/
+
+
+    .position-detil-text{
+        position: relative;
+        top: 3.5em;
+        transform: translate(-35%);
+        margin: 0 25%;
+    }
+
+    .top-pag-position p{
+        font-size: 7px;
+    }
+
+    .top-pag-position h2{
+        font-size: 14px;
+    }
+
+    .top-pag-position h3{
+        font-size: 9px;
+    }
+
+    .img-bk-detail-product{
+        display: none;
+    }
+
+    /*footer*/
+
+    footer{
+        display:none;
+    }
+
+
+    .container2 p{
+        font-size: 10px;
+    }
+    
+    .top-bac-position{
+        margin-top: 10%;
+    }
+
+    .container2 h2{
+        font-size: 10px;
+    }
+
+    .back-gen-product p{
+        font-size: 7px;
+    }
+
+    .back-gen-product img{
+        width: 30px;
+    }
+
+
+    /*Imganes responsivo*/
+
+    .flex-imf-detail-1{
+        margin-top: 10%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .img-detalle-2{
+        width: 100%;
+    }
+    
+    .video-detalles{
+        width: 100%;
+    }
+    
+    .video-detalles video{
+        width: 100%;
+        height: auto;
+    }
+    
+    .img-detalle-3{
+        width: 100%;
+    }
+    
+    .img-detalle-3 img{
+        width: 100%;
+    }
+    
+    .flex-img-10{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .flex-requ-img-11{
+        width: 100%;
+    }
+    
+    .flex-requ-img-12{
+        width: 100%;
+    }
+    
+    /*Img detalles producto*/
+
+    .img-bk-detail-product-mobile-800{
+        display: none;
+    }
+
+    .img-bk-detail-product-mobile-600{
+        display: block;
+        position: absolute;
+    }
+
+    .img-bk-detail-product-mobile-600 img{
+        width: 100%;
+        height: auto;
+    }
+
+    .position-detil-text h2{
+        font-size: 5vw;
+    }
+
+    .text-detail-size p{
+        font-size: 2.4vw;
+    }
+
+    .top-pag-position h3{
+        font-size: 3.5vw;
+    }
+
+    .top-pag-position .estilo-boton{
+        font-size: 2.5vw;
+    }
+
+    /*Generp bk*/
+    .top-bac-position{
+        margin-top: 12%;
+        font-size: 2.2vh;
+    }
+    
+    
+ /*   .back-gen-product{
+        background-color: var(--dark-gray);
+        width: 100%;
+        height: auto;
+        position: relative;
+        padding: auto;
+        padding: 20px 20px 20px 20px;
+        display: flex;
+        gap: 40px;
+    }
+    */
+    
+    .text-detail-product-25 p{
+        font-size: 2vw;
+    }
+
+    .text-detail-product-26 p{
+        font-size: 2vw;
+    }
+
 }
 
